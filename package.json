@@ -1,0 +1,22 @@
+{
+  "name": "shopping",
+  "version": "1.0.0",
+  "description": "## Prompt",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PJC-1/mean-lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PJC-1/mean-lab/issues"
+  },
+  "homepage": "https://github.com/PJC-1/mean-lab#readme",
+  "dependencies": {
+    "mongoose": "^4.4.19"
+  }
+}
