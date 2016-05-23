@@ -27,15 +27,15 @@ app.use(express.static(__dirname + '/public'));
 // END POINTS
 
 app.get('/api', controllers.api.index);
-app.get('/api/products', controllers.toilets.index);
-app.get('/api/products/:productId',controllers.toilets.show);
-app.post('/api/products', controllers.toilets.create);
-app.delete('/api/products/:productId', controllers.toilets.destroy);
-app.put('/api/products/:productId', controllers.toilets.update);
+app.get('/api/products', controllers.products.index);
+app.get('/api/products/:productId',controllers.products.show);
+app.post('/api/products', controllers.products.create);
+// app.delete('/api/products/:productId', controllers.products.destroy);
+// app.put('/api/products/:productId', controllers.products.update);
 
 
 
 // listen on port 3000
-app.listen(process.env.PORT || 3000, function () {
+app.listen(process.env.PORT || 9000, function () {
   console.log('Express server is running on http://localhost:3000/');
 });
