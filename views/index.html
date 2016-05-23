@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html ng-app="Products">
+  <head>
+    <meta charset="utf-8">
+    <title>Product</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="styplesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- APPLICATION SCRIPTS -->
+    <script src="../public/scripts/app.js"></script>
+
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1><strong>whats up Product</strong></h1>
+    </div>
+    <div class="container" ng-controller="ProductsIndexController as productsIndexCtrl">
+      <div class="repeating" ng-repeat="Product in productsIndexCtrl.name">
+        <p>{{Product.name}}<br>{{Product.dude}}<br></p>
+
+      </div>
+
+    </div>
+  </body>
+</html>
