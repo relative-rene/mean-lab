@@ -1,2 +1,2 @@
 module.exports.api = require('./apiController');
-module.exports.toilets = require('./productsController');
+module.exports.products = require('./productsController');

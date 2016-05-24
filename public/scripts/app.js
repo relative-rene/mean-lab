@@ -6,7 +6,8 @@
 angular
   .module('shopping', ['ngRoute'])
   .config(config);
-
+  
+config.$inject = ['$routeProvider', '$locationProvider'];
 function config ($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', {
