@@ -15,7 +15,7 @@ function config ($routeProvider, $locationProvider) {
       controllerAs: 'productsIndexCtrl',
       controller: 'ProductsIndexController'
     })
-    .when('/:id', {
+    .when('/products/:id', {
       templateUrl: 'templates/products-show',
       controllerAs: 'productsShowCtrl',
       controller: 'ProductsShowController'
