@@ -13,6 +13,7 @@ app.use(express.static(__dirname + '/public'));
 /**********
  * ROUTES *
  **********/
+
  var controllers = require("./controllers");
  var bodyParser = require('body-parser');
  app.use(bodyParser.urlencoded({ extended: true }));
@@ -38,6 +39,6 @@ app.put('/api/products/:productId', controllers.products.update);
 
 
 // listen on port 3000
-app.listen(process.env.PORT || 9000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('Express server is running on http://localhost:3000/');
 });
